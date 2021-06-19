@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.contain{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white ;
+    background-image: url(../image/memberbg.jpg);
+    background-size: cover;   
+    border: 2px dotted #FFFF33; 
+    border-radius: 50px;
+}
+
+.contain .photo{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+}
+.photo .photo2{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.photo .photo2 img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contain .personal{
+    width: 50%;
+    background-color: rgba(255, 255, 255, .8);
+    margin-left: auto;
+    margin-right:auto ;
+    margin-top: 50px;
+    /* display: none; */
+}
+.personal p{
+    height: 80px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.contain .order_search{
+    width: 90%;
+    margin-top: 50px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.order_search table{
+    width: 100%;
+}
+.order_search table td{
+    border: black 3px solid;
+    width: 25%;
+    height: 40px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+.contain #saying{
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: yellow;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.go{
+    display: flex;
+    justify-content: space-around;
+}
+
+.go input[type=button]{
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    padding: 7px 40px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: rgb(204, 216, 39);
+    font-size: 30px;
+    box-shadow:0 17px 50px 0 rgb(255, 255, 255);
+    margin-top: 80px;   
+    
+}
+
+.go input[type=button]:hover{
+    background: chocolate;
+}
+
+.go input[type=button]:active{
+    background: rgb(243, 112, 19);
+}

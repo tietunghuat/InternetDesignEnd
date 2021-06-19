@@ -1,0 +1,227 @@
+@keyframes typing1 {
+    from { width: 0 }
+    }   
+@keyframes caret1 {
+    50% { border-color: transparent; }
+    }
+
+@keyframes typing2 {
+    from { width: 0 }
+    }
+@keyframes caret2 {
+    50% { border-color: transparent; }
+    }
+
+.sentence1 {
+    margin: 5% auto 0px;
+    color:white;
+    font-size: 80px;
+    font-weight: bolder;
+    width: 4em;
+    border-right: 0.05em solid;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing1 3s steps(4),caret1 1s steps(1) infinite;
+}
+
+.sentence2 {
+    margin: 0 auto 5%;
+    color:white;
+    font-size: 60px;
+    font-weight: bolder;
+    width: 12em;
+    border-right: 0.05em solid;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-delay: 2s;
+    animation: typing2 3s steps(12),caret 1s steps(1) infinite;
+}
+
+.membertable{
+    margin: 0 auto;
+    border:5px solid rgba(255, 255, 255, 0);
+    /*padding: 10px;*/
+}
+
+tr, td{
+    border:10px solid rgba(255, 255, 255, 0);
+    /*padding: 10px;*/
+}
+
+.teammember{
+    width: 800px;
+    height:546px;
+    display: flex;
+   
+}
+
+.member{
+    width:400px;
+    height:546px;
+    
+    background-repeat: no-repeat;
+    position:relative;
+    perspective: 1000px;
+}
+
+.cardb, .cardfr{
+    /*box-shadow: 10px 10px 5px rgb(226, 228, 111);
+    display: block;
+    box-sizing:border-box;*/
+    border:3px solid khaki;
+    width:400px;
+    height: 546px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.25s ease-in-out;
+}
+
+.cardb{
+    background-repeat: no-repeat;
+    /*background-image: url(back.png);*/
+    transform: rotateY(0deg);
+}
+
+.member:hover .cardb{
+    transform:rotateY(180deg);
+}
+
+.cardb:hover{
+    transform:rotateY(180deg);
+}
+
+.cardfr{
+    background-repeat: no-repeat;
+    /*background-image: url(front.png);*/
+    transform:rotateY(-180deg);
+}
+
+.member:hover .cardfr{
+    transform: rotateY(0deg);
+}
+
+.contact{
+    width: 400px;
+    height: 546px;
+    position: relative;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.social{
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding:10%;
+}
+
+.contact .label{
+    font-weight: bolder;
+    line-height:120%;
+    display:block;
+    color:#fff;
+    font-size:50px;
+    text-align: center;
+}
+
+.member:hover .contact{
+    transform:translateX(400px);
+    transition: transform 0.25s ease-in-out;
+    /*transition:opacity 0.5s linear 0.25s;*/
+    opacity: 1;
+}
+
+
+.Lmember{
+    width:400px;
+    height:546px;
+    left:400px;
+    background-repeat: no-repeat;
+    position:relative;
+    perspective: 1000px;
+}
+
+.Lcardb, .Lcardfr{
+    /*box-shadow: 10px 10px 5px rgb(226, 228, 111);
+    display: block;
+    box-sizing:border-box;*/
+    border:3px solid khaki;
+    width:400px;
+    height: 546px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.25s ease-in-out;
+}
+
+.Lcardb{
+    background-repeat: no-repeat;
+    /*background-image: url(back.png);*/
+    transform: rotateY(0deg);
+}
+
+.Lmember:hover .Lcardb{
+    transform:rotateY(180deg);
+}
+
+.Lcardb:hover{
+    transform:rotateY(180deg);
+}
+
+.Lcardfr{
+    background-repeat: no-repeat;
+    /*background-image: url(front.png);*/
+    transform:rotateY(-180deg);
+}
+
+.Lmember:hover .Lcardfr{
+    transform: rotateY(0deg);
+}
+
+.Lcontact{
+    width: 400px;
+    height: 546px;
+    position: relative;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.Lcontact .label{
+    font-weight: bolder;
+    line-height:120%;
+    display:block;
+    color:#fff;
+    font-size:50px;
+    text-align: center;
+}
+
+.Lfont{
+    color: #fff;
+    font-size:30px;
+    margin: 0 5%;
+    text-align: right;
+}
+
+.font{
+    color: #fff;
+    font-size:30px;
+    margin: 0 5%;
+    text-align: left;
+}
+
+.Lmember:hover .Lcontact{
+    transform:translateX(-400px);
+    transition: transform 0.25s ease-in-out;
+    /*transition:opacity 0.5s linear 0.25s;*/
+    opacity: 1;
+}

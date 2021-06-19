@@ -1,0 +1,234 @@
+.sidebar{
+    display: block;
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    background-color:#e0daae;
+    overflow-x: auto;
+	overflow-y: auto;
+    transition: 0.7s;
+    padding-top:60px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sidebarcontent{
+    position:relative;
+    top:0px;
+    width:100%;
+    overflow: auto;
+    display: block;
+    justify-content: center;
+    transition: 0.7s;
+	
+	
+}
+
+/*.sidebar a{
+    width: 300px;
+    padding: 0px;
+    /*white-space:nowrap;*/
+    /*display: block;
+    font-size: 36px;
+    color: #ecf011;
+    transition: 0.7s;
+}*/    
+
+
+
+/*.sidebar .cartcheck{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}*/
+
+.openbtn {
+    font-weight: bolder;
+    position:fixed;
+    width: 55px;
+    height:170px;
+    font-size: 25px;
+    cursor: pointer;
+    border:0px;
+    border-radius: 5%;
+    background-color: #e0daae;
+    color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.closebtn {
+    font-weight: bolder;
+    position:fixed;
+    width: 55px;
+    height:170px;
+    font-size: 25px;
+    cursor: pointer;
+    border:0px;
+    border-radius: 5%;
+    background-color: #e0daae;
+    color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.cartcheck{
+    margin:50px auto;
+    width:500px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #000000;
+	background-color: #F19E18;
+    text-decoration:none;
+    display: block;
+    transition: 0.7s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+  #main {
+    transition: margin-left .7s;
+    padding-left: 0px;
+  }
+
+.myproduct{
+    color:rgb(25, 0, 255);
+    margin:5px;
+    font-weight:bolder;
+    display: flex;
+    align-items: center;
+    content: "";
+    clear: both;
+    border-bottom: 3px solid gray;
+    white-space:nowrap;
+    /*flex-wrap: wrap;*/
+}
+
+.choosepro{
+   margin:5px;
+   height: 40px;
+}
+
+.smallpicture{
+    width:80px;
+    margin:20px;
+
+}
+
+.ballname{
+    width:300px;
+}
+
+.qu{
+    color:black;
+    /*width: 100%;*/
+    margin-bottom: 0px;
+    margin-left: 80px;
+    align-items: center;
+    display: flex;
+    transition: 0.7s;
+    white-space:nowrap;
+}
+
+.amount{
+    display: block;
+    margin-right: 5px;
+    width:4em;
+    height: 2em;
+}
+
+.total{
+    display:flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/*member or not*/
+
+.windows{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    
+    left:0px;
+    top:0px;
+    width:100%;
+    height: 100%;
+    /*overflow: auto;*/
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.windowsimg{
+    position: absolute;
+    z-index: -1;
+    margin:0 auto;
+    width : 450px;
+    height : 550px;
+    animation-name: animationtop;
+    animation-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: blur(5px);
+}
+
+.windowscontent{
+    position: relative;
+    /*background-color: rgb(255, 255, 255);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    
+    /*backdrop-filter: blur(5px);*/
+    
+    width : 450px;
+    height : 550px;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+    animation-name: animationtop;
+    animation-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+@keyframes animationtop{
+    from{
+        top:-100px;
+        opacity: 0;
+    }
+    to{
+        top:0px;
+        opacity: 1;
+    }
+}
+
+.windowsh1{
+    margin-top:100px;
+    
+}
+
+.memberornot{
+    margin: 30px 30px 30px 30px;
+    white-space: nowrap;
+    display:flex;
+    justify-content: space-around;
+}
+
+.memberbtn{
+    margin:10px 40px 20px 40px;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}

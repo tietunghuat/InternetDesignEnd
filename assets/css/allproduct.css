@@ -1,0 +1,85 @@
+
+.contain{
+    margin-top: 100px;
+    /* height: 1500px; */
+}
+.room h2{
+    width: 15%;
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+.room .card{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 20%;
+    height: 500px;
+    color: black;
+    background-color: #FFE4E1;
+    display: inline-block;
+    border-radius: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center; 
+}
+.room .card:hover{
+    position: relative;
+    top: -20px;
+    background-color: 	#36688D;
+    color: white;
+    border: 8px orange solid;
+    box-shadow: orange 10px 10px 10px;    
+}
+.room .card1:hover{
+    position: relative;
+    top: -20px;
+    background-color: 	#36688D;
+    color: white;
+    border: 8px orange solid;
+    box-shadow: orange 10px 10px 10px;    
+}
+.room .card1{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 4%;
+    width: 20%;
+    height: 500px;
+    background-color: #FFE4E1;
+    display: inline-block;
+    border-radius: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.card a .box,.card1 a .box{
+    width: 100%;
+    height: 53%;
+    background-color: white;
+}
+.card a .box img,.card1 a .box img{
+    width: 70%;display: flex; margin-left: auto;margin-right: auto;
+}
+.card #number,.card1 #number{
+    font-size:40px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.card #introduction,.card1 #introduction{
+    font-size: 25px;
+    line-height: 40px;
+}
+.card #understand,.card1 #understand{
+    height:50px;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #BB5500; 
+    background-color: #F3CD05;
+    border-radius: 20%; 
+    width: 150px;
+}
+

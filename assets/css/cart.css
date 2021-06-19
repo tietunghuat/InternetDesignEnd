@@ -1,0 +1,106 @@
+.billform{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+    /*background:radial-gradient(circle closest-side at center,rgb(206, 198, 129),black);*/
+    margin: 0 auto;
+    padding:10px;
+    color:white;
+    width:60%;
+}
+
+.bill{
+    padding: 0 16px;
+    flex:75%;
+    box-shadow:0 17px 50px 0 rgb(255, 255, 255);
+    /*background-color: white;*/
+}
+
+.billlegend{
+    color:rgb(248, 248, 248);
+    /*filter: glow(rgb(157, 255, 0), strength=2);*/ 
+    font-weight: bolder;
+    text-shadow: 0px 0px 30px #ffffff,0px -20px 60px #f3f707;
+    font-size:60px;
+    margin:20px;
+    
+}
+
+input[type=text] {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    outline: none;
+}
+  
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    color:white;
+    font-weight: bolder;
+}
+
+input[type=radio] { 
+    margin-bottom: 20px;
+  
+}
+
+.product{
+    height:400px;
+    flex:25%;
+    padding: 0 16px;
+    margin:25px;
+    color:white;
+    /*box-shadow: 0 12px 16px 0 rgb(255, 106, 6), 0 17px 50px 0 rgb(243, 201, 15);*/
+    
+}
+
+.myproduct{
+    padding: 5px 20px 15px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    box-shadow:0 17px 50px 0 rgb(255, 255, 255);
+}
+
+.myproduct a{
+    color:white;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+input[type=checkbox] {
+    color: white;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    outline: none;
+}
+
+.buy{
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    padding: 7px 40px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: rgb(204, 216, 39);
+    font-size: 30px;
+    box-shadow:0 17px 50px 0 rgb(255, 255, 255);
+    margin-top: 10px;   
+}
+
+.buy:hover{
+    background: chocolate;
+}
+
+.buy:active{
+    background: rgb(243, 112, 19);
+}

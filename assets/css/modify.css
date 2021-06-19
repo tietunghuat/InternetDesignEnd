@@ -1,0 +1,74 @@
+
+.contain{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: #9955FF;
+    border: white 10px solid;
+}
+.contain h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.contain .photo{
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/memberbg.jpg);
+    background-size: cover;
+    margin-top: 20px;
+}
+.photo .photo2{
+    height: 100%;
+    width: 20%;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.photo .photo2 img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.contain .personal{
+    width: 100%;
+
+}
+.personal table{
+    border: 2px black solid;
+    font-size: 30px;
+    width: 100%;
+}
+.personal table td{
+    border: 2px black solid;
+    text-align: center;
+    padding: 10px;
+}
+.personal table td #name,#email,#tel,#address,#birth{
+    width: 70%;
+    height: 30px;
+
+}
+.personal table td #man,#woman{
+    width: 50px;
+    height: 25px;
+}
+.personal table tr td:nth-child(odd){
+    background-color: cornflowerblue;
+    font-weight: bold;
+    font-size: 40px;
+}
+.personal .revise{
+    width: 20%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 25px;
+    background-color: #FFBB66;
+    margin-bottom: 50px;
+}
